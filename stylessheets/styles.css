@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/*--------------------- -------------------------*/
+
+.login-title {
+    text-align: center;
+}
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+/* ------------------------- Styling the sidebar ------------------------- */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    background-color: #464646;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s ease;
+}
+
+.sidebar-main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.sidebar-seperator {
+    border: 1px solid #ccc;
+    width: 90%;
+    margin: 10px;
+}
+
+.sidebar-item {
+    margin: 10px 0;
+    width: 90%; 
+    text-align: center;
+    background-color: #464646;
+    color: #ffff;
+    border: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.sidebar-item:hover {
+    transition: 0.90s;
+    background-color: grey;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 90%;
+    cursor: pointer;
+}
+
+.logo {
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    padding-bottom: 0px;
+}
+
+.logo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60px;
+    height: 90px;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 1px;
+    left: 25px;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.arrow.open-arrow {
+    display: inline-block;
+    background-image: url('./assets/sidebar-open-arrow.png');
+}
+
+.arrow.close-arrow {
+    display: none;
+    background-image: url('./assets/sidebar-close-arrow.png');
+}
+
+.sidebar.expanded {
+    width: 200px;
+}
+
+.sidebar.expanded .logo-container {
+    flex-direction: row;
+}
+
+.sidebar.expanded .open-arrow {
+    display: none;
+}
+
+.sidebar.expanded .close-arrow {
+    display: inline-block;
+}
+
+.sidebar-item img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 0px;
+    vertical-align: middle;
+}
+
+.sidebar-item span {
+    display: none;
+}
+
+.sidebar.expanded .sidebar-item span {
+    display: inline;
+    padding-left: 10px;
+}
+
+.sidebar.expanded .sidebar-item {
+    text-align: left;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+/*Styling for the user profile section on the sidebar*/
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.user-image {
+    border-radius: 50%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 0px;
+    vertical-align: middle;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-name, .user-email {
+    display: none;
+    font-size: 14px;
+    margin: 0; 
+    color: #fff;
+}
+
+.sidebar.expanded .user-name, .sidebar.expanded .user-email {
+    display: block;
+}
+
+.user-email {
+    font-size: 12px;
+    color: #fff;
+}
+
+.sidebar.expanded .user-profile {
+    justify-content: flex-start;
+}
+
+.sidebar.expanded .user-details {
+    align-items: flex-start;
+}
+
+.sidebar-bottom-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+}

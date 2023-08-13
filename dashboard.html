@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylessheets/styles.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">          
+            <!-- Logo and toggle button container -->
+            <div class="logo-container">
+                <img class="logo" src="./assets/logo-white.png" alt="Logo" />
+                <div class="arrow open-arrow" style="background-image: url('./assets/sidebar-open-arrow.png')"></div>
+                <div class="arrow close-arrow" style="background-image: url('./assets/sidebar-close-arrow.png')"></div>
+            </div>
+            <!-- Sidebar item seperator -->
+            <hr class="sidebar-seperator">
+            <div class="sidebar-main-content">
+                <button class="sidebar-item" onclick="navigate('dashboard.html')">
+                    <img src="./assets/dashboard-image.png" alt="Dashboard Icon">
+                    <span>Dashboard</span>
+                </button>
+                <button class="sidebar-item" onclick="navigate('billing.html')">
+                    <img src="./assets/billing-image.png" alt="Billing Icon">
+                    <span>Billing</span>
+                </button>
+            </div>
+            <!-- Sidebar item seperator -->
+            <hr class="sidebar-seperator">
+            <!-- Buttons at the bottom of the sidebar -->
+            <div class="sidebar-bottom-content">
+                <!-- Help option -->
+                <button class="sidebar-item" onclick="navigate('help.html')">
+                    <img src="./assets/help-image.png" alt="Help Icon">
+                    <span>Help</span>
+                </button>
+                <!-- Settings option -->
+                <button class="sidebar-item" onclick="navigate('settings.html')">
+                    <img src="./assets/settings-image.png" alt="Settings Icon">
+                    <span>Settings</span>
+                </button>
+                <!-- Sidebar item seperator -->
+                <hr class="sidebar-seperator">
+                <!-- User profile section -->
+                <button class="sidebar-item" onclick="navigate('profile.html')">
+                    <img src="./assets/profile-image.png" alt="User Image" class="user-image">
+                    <span>Profile</span>
+                </button>
+            </div> 
+        </div>
+        <div class="content">
+
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+    <script src="./scripts/scripts.js"></script>
+</body>
+</html>
